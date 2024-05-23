@@ -1,50 +1,101 @@
- @tailwind base;
- @tailwind components;
- @tailwind utilities;
- /* 
- :root {
-   --foreground-rgb: 0, 0, 0;
-   --background-start-rgb: 214, 219, 220;
-   --background-end-rgb: 255, 255, 255;
- }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
- @media (prefers-color-scheme: dark) {
-   :root {
-     --foreground-rgb: 255, 255, 255;
-     --background-start-rgb: 0, 0, 0;
-     --background-end-rgb: 0, 0, 0;
-   }
- }
+/* .coGqTS,
+.iiIORr.show-less{
+  display: none !important;
+} */
+@media (min-width: 1024px) {
+  .jHeaAq {
+    min-height: 60vh;
+  }
+}
+.gJAGSz {
+  background: none !important;
+  color: black !important;
+}
+.gJAGSz.active {
+  background: none !important;
+  color: black !important;
+}
 
- body {
-   color: rgb(var(--foreground-rgb));
-   background: linear-gradient(to bottom,
-       transparent,
-       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
- }
+.gJAGSz {
+  font-weight: 400 !important;
+  text-align: left !important;
+}
 
- @layer utilities {
-   .text-balance {
-     text-wrap: balance;
-   }
- } */
+.fwRzpx {
+  display: none !important;
+}
 
- .fwRzpx {
-   display: none !important;
- }
+.deskTopTitle {
+  color: #007fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.25rem 0 0.5rem 0;
+  text-align: left;
+  width: 95%;
+}
 
- @media (max-width: 1024px) {
-   .jsVFgY {
-     display: none !important;
-   }
+.desktopSubTitle {
+  color: #000;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: left;
+  width: 97%;
+  padding: 0.5rem 0 0.5rem 0rem;
+}
 
-   .emqEhB {
-     width: 100% !important;
-   }
- }
+.desktopdescription {
+  font-size: 0.85rem;
+  font-weight: 400;
+}
 
- @media (min-width: 580px) {
+.coGqTS,
+.jaQaOm {
+  display: none !important;
+}
+
+/* -Media query */
+@media (max-width: 1024px) {
+  .coGqTS,
+  .jaQaOm {
+    display: block !important;
+  }
+
+  .jsVFgY {
+    display: none !important;
+  }
+
+  .jIatKG {
+    display: none !important;
+  }
+
+  .emqEhB {
+    width: 100% !important;
+  }
+
+  .bHAjAv {
+    padding: 0px !important;
+  }
+
+  .jSOuST {
+    margin-left: 0.5rem !important;
+  }
+
+  .bzKFtd {
+    padding: 0.5rem 0 0rem 0.5rem !important;
+  }
+
+  .jSOuST {
+    padding: 0rem 0 0.5rem 0.5rem !important;
+  }
+}
+
+@media (min-width: 580px) {
   .keecDZ {
-     min-height: 260px !important;
-   }
- }
+    min-height: 260px !important;
+  }
+}
