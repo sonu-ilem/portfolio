@@ -1,7 +1,7 @@
  @tailwind base;
  @tailwind components;
  @tailwind utilities;
-/* 
+ /* 
  :root {
    --foreground-rgb: 0, 0, 0;
    --background-start-rgb: 214, 219, 220;
@@ -28,3 +28,23 @@
      text-wrap: balance;
    }
  } */
+
+ .fwRzpx {
+   display: none !important;
+ }
+
+ @media (max-width: 1024px) {
+   .jsVFgY {
+     display: none !important;
+   }
+
+   .emqEhB {
+     width: 100% !important;
+   }
+ }
+
+ @media (min-width: 580px) {
+  .keecDZ {
+     min-height: 260px !important;
+   }
+ }
