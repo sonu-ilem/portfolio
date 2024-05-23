@@ -11,10 +11,12 @@
     min-height: 60vh;
   }
 }
+
 .gJAGSz {
   background: none !important;
   color: black !important;
 }
+
 .gJAGSz.active {
   background: none !important;
   color: black !important;
@@ -58,8 +60,23 @@
   display: none !important;
 }
 
+.buttonBT {
+  color: #007fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.jHeaAq {
+  margin: 0 !important;
+}
+
+.dBAArN {
+  padding: 0 !important;
+}
+
 /* -Media query */
 @media (max-width: 1024px) {
+
   .coGqTS,
   .jaQaOm {
     display: block !important;

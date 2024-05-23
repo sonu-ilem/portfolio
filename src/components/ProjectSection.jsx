@@ -24,6 +24,42 @@ export default function ProjectSection() {
         },
       },
     },
+    {
+      title: <DescriptionSection />,
+      cardTitle: "Payments tool for companies",
+      cardSubtitle: "12 Mar To 13 April 2024",
+      cardDetailedText: <MobileDescription />,
+      media: {
+        type: "IMAGE",
+        source: {
+          url: "https://in.ilemjapan.com/cdn/shop/files/2_10.jpg?v=1715670376",
+        },
+      },
+    },
+    {
+      title: <DescriptionSection />,
+      cardTitle: "Payments tool for companies",
+      cardSubtitle: "12 Mar To 13 April 2024",
+      cardDetailedText: <MobileDescription />,
+      media: {
+        type: "IMAGE",
+        source: {
+          url: "https://in.ilemjapan.com/cdn/shop/files/2_10.jpg?v=1715670376",
+        },
+      },
+    },
+    {
+      title: <DescriptionSection />,
+      cardTitle: "Payments tool for companies",
+      cardSubtitle: "12 Mar To 13 April 2024",
+      cardDetailedText: <MobileDescription />,
+      media: {
+        type: "IMAGE",
+        source: {
+          url: "https://in.ilemjapan.com/cdn/shop/files/2_10.jpg?v=1715670376",
+        },
+      },
+    },
   ];
 
   return (
