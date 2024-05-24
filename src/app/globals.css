@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* .coGqTS,
 .iiIORr.show-less{
   display: none !important;
@@ -33,7 +39,7 @@
 
 .deskTopTitle {
   color: #007fff;
-  font-size: 1rem;
+  font-size: 1rem !important;
   font-weight: 600;
   margin: 0.25rem 0 0.5rem 0;
   text-align: left;
@@ -60,22 +66,11 @@
   display: none !important;
 }
 
-.buttonBT {
-  color: #007fff;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.jHeaAq {
-  margin: 0 !important;
-}
-
-.dBAArN {
-  padding: 0 !important;
-}
-
 /* -Media query */
 @media (max-width: 1024px) {
+  .arrowButton {
+    display: none;
+  }
 
   .coGqTS,
   .jaQaOm {
@@ -115,4 +110,27 @@
   .keecDZ {
     min-height: 260px !important;
   }
+}
+
+.contactSubTitle {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: left;
+  width: 97%;
+  padding: 0.5rem 0 0.5rem 0rem;
+}
+
+.constctTitle {
+  color: #007fff;
+  font-size: 1.5rem !important;
+  font-weight: 600;
+  margin: 0.25rem 0 0.5rem 0;
+  text-align: left;
+  width: 95%;
+}
+
+.imageSection{
+  margin: auto 0px;
 }
