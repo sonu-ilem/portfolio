@@ -65,11 +65,7 @@ export default function ProjectSection() {
   return (
     <>
       {isMounted && (
-        <Chrono
-          items={items}
-          mode="VERTICAL_ALTERNATING"
-          itemWidth={150}
-        />
+        <Chrono items={items} mode="VERTICAL_ALTERNATING" itemWidth={150} />
       )}
     </>
   );
