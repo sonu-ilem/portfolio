@@ -1,3 +1,4 @@
+// import { AboutModal } from "@/components/AboutModal";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import LettestWorkButton from "@/components/LettestWorkButton";
@@ -11,12 +12,12 @@ export default function Home() {
     <>
       {/* <TypewriterEffectSmoothDemo /> */}
       <HomeBanner />
-      <LettestWorkButton item={"Latest Works"} />
+      {/* <LettestWorkButton item={"Latest Works"} /> */}
       <ProjectSection />
-      <LettestWorkButton item={"What my clients are saying?"} border />
-      <Testomonial />
-      <ContactForm />
-      <Footer />
+      {/* <LettestWorkButton item={"What my clients are saying?"} border /> */}
+      {/* <Testomonial /> */}
+      {/* <ContactForm /> */}
+      {/* <Footer /> */}
     </>
   );
 }
