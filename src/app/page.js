@@ -23,7 +23,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IoLogoWhatsapp size={40} className="text-[#26c943] animate-bounce" />
+          <IoLogoWhatsapp size={50} className="text-[#26c943] animate-bounce md:w-15 md:h-15 " />
         </Link>
       </div>
     </div>
