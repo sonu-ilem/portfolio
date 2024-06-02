@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { FiSmile } from "react-icons/fi";
 
-export default function ContactForm() {
+export default function FeedBackForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -26,8 +26,8 @@ export default function ContactForm() {
     e.preventDefault();
 
     // Validate form data
-    if (!formData.name || !formData.email || !formData.phone || !formData.message) {
-      setError("All field required, Thanks");
+    if (!formData.name || !formData.phone || !formData.message) {
+      setError("Please fields require, thank you!");
       setIsButtonDisabled(true);
 
       // Clear the error message after 5 seconds
@@ -41,7 +41,7 @@ export default function ContactForm() {
 
     setIsButtonDisabled(true);
 
-    const res = await fetch("http://localhost:3000/api/posts", {
+    const res = await fetch("http://localhost:3000/api/feedback", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -68,9 +68,9 @@ export default function ContactForm() {
       <section className="bg-blue-50" id="contact">
         <div className="mx-auto max-w-7xl px-4 py-2 sm:px-6 lg:px-8 lg:py-20">
           <div className="mb-4">
-            <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
-              <h2 className="constctTitle flex justify-center font-heading mb-4 font-bold tracking-tight text-gray-900 text-3xl sm:text-5xl">
-                Get in Touch
+            <div className="mb-6 flex max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
+              <h2 className="constctTitle uppercase flex justify-center font-heading mb-4 font-bold tracking-tight text-gray-900 text-3xl sm:text-5xl">
+                Suggestions.
               </h2>
             </div>
           </div>
@@ -79,13 +79,18 @@ export default function ContactForm() {
               {/* Image here */}
               <div className="imageSection max-w-full max-h-[200px] md:max-h-[400px]">
                 <img
-                  src="https://cdni.iconscout.com/illustration/premium/thumb/contact-us-3483604-2912020.png"
+                  src="/suggg.png"
                   alt=""
                   className="object-cover w-full h-full hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <div className="card h-fit max-w-6xl md:p-12 mt-[2rem]" id="form">
-                <p className="mb-4 contactSubTitle">Ready to Get Started?</p>
+              <div
+                className="card h-fit max-w-6xl md:p-12 mt-[2rem] "
+                id="form"
+              >
+                <p className="mb-4 contactSubTitle">
+                  Please type your suggestion below
+                </p>
                 <form id="contactForm" onSubmit={handleSubmit}>
                   <div className="mb-6">
                     <div className="mx-0 mb-1 sm:mb-4">
@@ -113,7 +118,7 @@ export default function ContactForm() {
                         type="email"
                         id="email"
                         autoComplete="email"
-                        placeholder="Your email address"
+                        placeholder="Your email (optional)"
                         className="mb-2 w-full border border-gray-500 py-2 pl-2 pr-4 shadow-md focus:border-blue-500 sm:mb-0"
                         name="email"
                         value={formData.email}
@@ -160,9 +165,9 @@ export default function ContactForm() {
                       </div>
                     )}
                     {isButtonDisabled && !error && (
-                      <div className="flex py-2 mb-1 items-center bg-blue-800 animate-bounce rounded-sm">
+                      <div className="flex py-4 items-center bg-blue-800 animate-bounce mb-1">
                         <h1 className="text-xl text-white">
-                          Thanks I will contact you soon!
+                          Thanks for the helpful advice!
                         </h1>
                         <span className="ml-2">
                           {<FiSmile className="text-white" />}
@@ -178,7 +183,7 @@ export default function ContactForm() {
                       }`}
                       disabled={isButtonDisabled || error}
                     >
-                      {isButtonDisabled ? "Please wait..." : "Send Message"}
+                      {isButtonDisabled ? "Please Wait..." : "Send Message"}
                     </button>
                   </div>
                 </form>

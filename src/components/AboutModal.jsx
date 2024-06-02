@@ -34,7 +34,7 @@ export function AboutModal() {
       <Dialog
         open={open}
         handler={handleOpen}
-        className="bg-slate-900 mx-auto mt-6 h-[90vh] md:h-[80vh] max-w-[90vw] md:max-w-[80vw] xl:max-w-[70vw] shadow-xl rounded-xl "
+        className="bg-slate-900 mx-auto mt-6 h-[90vh] md:h-[80vh] w-[90vw] md:max-w-[80vw] xl:max-w-[70vw] shadow-xl rounded-xl "
       >
         <div className="flex justify-end p-2">
           <Button

@@ -6,10 +6,12 @@ import ProjectSection from "@/components/ProjectSection";
 import Testomonial from "@/components/Testomonial";
 import HomeBanner from "@/components/homepage/HomeBanner";
 import { IoLogoWhatsapp } from "react-icons/io";
+import PopupModal from "@/components/PopupModal";
 
 export default function Home() {
   return (
     <div className="relative">
+      <PopupModal />
       <HomeBanner />
       <LettestWorkButton item={"Latest Works"} />
       <ProjectSection />
@@ -23,7 +25,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IoLogoWhatsapp size={50} className="text-[#26c943] animate-bounce md:w-15 md:h-15 " />
+          <IoLogoWhatsapp
+            size={50}
+            className="text-[#26c943] animate-bounce md:w-15 md:h-15 "
+          />
         </Link>
       </div>
     </div>
